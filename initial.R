@@ -6,7 +6,7 @@ packages <- c("ggplot2", "dplyr", "tidyverse", "pdftools", "shiny", "googlesheet
 # Install packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
+  install.packages(packages[!installed_packages], repos='https://stat.ethz.ch/CRAN/')
 }
 
 # Packages loading
