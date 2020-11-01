@@ -4,10 +4,10 @@
 packages <- c("ggplot2", "dplyr", "tidyverse", "pdftools", "shiny", "googlesheets4", "rvest", "RSwissMaps", "plotly")
 
 # Install packages not yet installed
-installed_packages <- packages %in% rownames(installed.packages())
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages], repos='https://stat.ethz.ch/CRAN/')
-}
+# installed_packages <- packages %in% rownames(installed.packages())
+# if (any(installed_packages == FALSE)) {
+#   install.packages(packages[!installed_packages], repos='https://stat.ethz.ch/CRAN/')
+# }
 
 # Packages loading
 invisible(lapply(packages, library, character.only = TRUE))
