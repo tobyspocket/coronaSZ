@@ -5,8 +5,20 @@
 
 ###### BASICS ############################
 
+### Pakete laden
+library("dplyr")
+library("googlesheets4")
+library("pdftools")
+library("rvest")
+library("stringr")
+
+
 ### Initial Load
-source("initial.R")
+source("R/global.R")
+
+
+### Link-Liste mit importierten Files
+linkliste <- read_sheet(sheet_url, sheet="Links")
 
 
 
